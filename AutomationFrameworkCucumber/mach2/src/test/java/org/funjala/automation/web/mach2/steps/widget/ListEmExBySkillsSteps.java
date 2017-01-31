@@ -37,8 +37,8 @@ public class ListEmExBySkillsSteps {
     widget.clickOnSpecificCombobox();
   }
 
-  @Then("^I should see the list of Employees by Skill: \"([^\"]*)\" on E.E. category$")
-  public void iShouldSeeTheListOfEmployeesBySkillCloudOnEECategory(String skillName) throws IOException, InterruptedException {
+  @Then("^I should see the list of Employees by Skill: \"([^\"]*)\" on E.E. Skill Areas$")
+  public void iShouldSeeTheListOfEmployeesBySkillOnEESkillAreas(String skillName) throws IOException, InterruptedException {
     Log log = Log.getInstance();
     WebDriver driver = Driver.getDriver().getWebDriver();
     WidgetPage widget = new WidgetPage(driver);
@@ -82,5 +82,4 @@ public class ListEmExBySkillsSteps {
 
     assertEquals(expectResult, actualResult);
   }
-
 }

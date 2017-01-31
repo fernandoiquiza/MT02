@@ -1,3 +1,4 @@
+@listBySkillAreas
 Feature: Validate list of Employees
   This scenario should validate Employee Experience by a Skill search containing Cloud.
 
@@ -11,6 +12,6 @@ Feature: Validate list of Employees
     And I select "Open ERP" service
     And I select "Employees Experience" of Open ERP
 
-    When I click on Skills combobox and select Cloud.
+    And I select "Cloud" on "Skill Areas" option
     And I click on save button
-    Then I should see the list of Employees by Skill: "Cloud" on E.E. category
+    Then I should see the list of Employees by Skill: "Cloud" on E.E. Skill Areas

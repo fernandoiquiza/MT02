@@ -8,5 +8,5 @@ import cucumber.api.testng.AbstractTestNGCucumberTests;
  */
 
 @CucumberOptions(features = "src/test/resources/features/widget/",
-        format = {"json:target/mach2.json", "html:target/mach2/mach2-cucumber"}, tags = {"@TableEPIByDivisions"})
+        format = {"json:target/mach2.json", "html:target/mach2/mach2-cucumber"}, tags = {"@TableEPIByDivisions", "@listBySkillAreas"} )
 public class Runner extends AbstractTestNGCucumberTests {}
